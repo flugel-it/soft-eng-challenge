@@ -10,7 +10,7 @@ const {
 const createMotherShipCtl = async (req, res, next) => {
   try {
     const result = await createMotherShip(req.body.name);
-    res.status(201).send({ message: result });
+    res.status(201).send({ message: result});
   } catch (error) {
     next(error)
   }
