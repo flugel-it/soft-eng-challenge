@@ -2,8 +2,6 @@ var express = require('express');
 const helmet = require("helmet");
 var app = express();
 var morgan = require('morgan');
-const errors = require('./lib/error');
-const errorModel = require('./lib/errorResponse');
 const isError = true;
 require('dotenv').config();
 var compression = require('compression');
@@ -30,7 +28,6 @@ app.get('/', (req, res, next) => {
   if (!isError) {
     res.send({ "hellow": "World" });
   }
-  let error = new errorModel.errorResponse(errors.invalid_operation.withDetails('Event with given title is already created'));
   res.send(error);
 });
 
