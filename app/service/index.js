@@ -35,7 +35,7 @@ const createMotherShip = async (name) => {
     }
 
     await mShip.save();
-    return "Mother ship created successfully";
+    return "Mother ship created successfully"
   } catch (error) {
     throw new Error(error);
   }
