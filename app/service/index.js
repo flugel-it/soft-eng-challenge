@@ -185,8 +185,6 @@ const switchCrew = async (from_ship, to_ship, name) => {
       return "Ship is filled up";
     }
     const index = from_Ship.crew.indexOf(crewMember._id);
-    console.log(index, "look===");
-
     if (index == -1) {
       return "Crew does not exist in the ship";
     }
