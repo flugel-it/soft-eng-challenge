@@ -213,7 +213,7 @@ const createCrew = async (name) => {
     let checkName = await Crew.findOne({name})
     if(checkName) throw new Error("Crew already exists")
     await Crew.create({ name });
-    return "crew created successfully";
+    return "crew created successfully ";
   } catch (error) {
     throw new Error(error);
   }
