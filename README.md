@@ -17,10 +17,7 @@ The API needs to have three entities:
 
 Mothership has many ships.
 Ships has Mana CrewMembers.
-### Requeriments
-- Python ^3.9
-- Poetry ^1.1.12
-- Django ^3.2.12
+
 ### Acceptance criteria
 - Given that the officer wants to add a mothership, when he adds a mothership, then the mothership will be created with three ships
 - Given that the mothership was created, when the ship is created, then ship will create three crew members
@@ -31,8 +28,7 @@ Ships has Mana CrewMembers.
 - Given that the officer wants to switch a crew member between the ships, when he sends the from_ship and the to_ship and the name of the crew member, then the action will be allowed only if the to_ship will not exceed the capacity
 ### Definition of Done
 Complete the following checklist
-1.  Use the [Django Styleguide](https://github.com/HackSoftware/Django-Styleguide) as reference if you are using Django.
-If you are using NodeJS use the [Airbnb Style Guide](https://github.com/airbnb/javascript) with a layer architecture, with proper responsibilities division (routes, services, repositories).
+1.  Use the [Airbnb Style Guide](https://github.com/airbnb/javascript) with a layer architecture, with proper responsibilities division (routes, services, repositories).
 2. Remove duplicated or unnecessary code
 3. Avoid hardcoded values
 4. No unnecessary comments
